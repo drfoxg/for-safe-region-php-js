@@ -1,0 +1,259 @@
+/* input */
+.job4-mask input:valid {
+    border-color: green;
+    color: green;
+    box-shadow: none;
+}
+
+.job4-mask input:invalid {
+    border-color: red;
+    color: red;
+    box-shadow: none;
+}
+
+.job4-mask input:invalid {
+    border-color: red;
+    color: red;
+    box-shadow: none;
+}
+
+.job4-mask input:focus:invalid {
+    border-color: red;
+    color: red;
+    box-shadow: none;
+}
+/* end  input */
+
+/*
+X×Y matrix with Bootstrap 3
+The code depends only on X:
+.btn-matrix > .btn {
+  width: (100/X)%;
+}
+*/
+.btn-matrix > .btn {
+  width: 25%;
+  margin-left: 0 !important;
+}
+
+.btn-matrix > .btn:nth-child(n) {
+  background-color: lightsteelblue;
+}
+
+.btn-matrix > .btn:nth-child(4n+4+1) {
+  clear: left;
+}
+
+.btn-matrix > .btn:nth-child(n+4+1) {
+  margin-top: -1px;
+}
+
+.btn-matrix > .btn:first-child {
+  border-bottom-left-radius: 0;
+  background-color: yellow;
+}
+.btn-matrix > .btn:nth-child(4) {
+  border-top-right-radius: 4px !important;  
+}
+
+.btn-matrix > .btn:nth-child(4n+5) {
+  background-color: yellow;
+}
+
+.btn-matrix > .btn:nth-last-child(4) {
+  border-bottom-left-radius: 4px !important;  
+}
+.btn-matrix > .btn:last-child {
+  border-top-right-radius: 0;
+  background-color: darkgray;
+  color: darkgray;
+}
+
+/* crossword */
+.input-matrix > .btn {
+  width: 10%;
+  height: 50px;
+  line-height: 40px;
+  margin-left: 0 !important;
+}
+
+.input-matrix > .btn:nth-child(n) {
+  background-color: yellow;
+}
+
+.input-matrix > .btn:nth-child(10n+10+1) {
+  clear: left;
+}
+
+.input-matrix > .btn:nth-child(n+4+1) {
+  margin-top: -1px;
+}
+
+.input-matrix > .btn:first-child {
+  border-bottom-left-radius: 0;
+}
+.input-matrix > .btn:nth-child(10) {
+  border-top-right-radius: 4px !important;  
+}
+
+.input-matrix > .btn:nth-child(5), 
+.input-matrix > .btn:nth-child(34),
+.input-matrix > .btn:nth-child(48) {
+  background-color: orange;
+}
+
+.input-matrix > .btn:nth-child(17), 
+.input-matrix > .btn:nth-child(22),
+.input-matrix > .btn:nth-child(31) {
+  background-color: mediumpurple;
+}
+
+.input-matrix > .btn:nth-child(24), 
+.input-matrix > .btn:nth-child(40),
+.input-matrix > .btn:nth-child(50) {
+  background-color: lightsteelblue;
+}
+
+.input-matrix > .btn:nth-last-child(10) {
+  border-bottom-left-radius: 4px !important;  
+}
+.input-matrix > .btn:last-child {
+  border-top-right-radius: 0;
+}
+
+.input-matrix > .hole {
+    background-color: darkgray !important;
+    color: darkgray;
+}
+
+[contenteditable="true"]:hover {
+    background-color: lightgreen !important;
+}
+
+[contenteditable="true"].single-line {
+    white-space: nowrap;
+    overflow: hidden;
+} 
+[contenteditable="true"].single-line br {
+    display:none;
+
+}
+[contenteditable="true"].single-line * {
+    display:inline;
+    white-space:nowrap;
+}
+
+/* end crossword  */
+
+/* keyword */
+.keyword-matrix > .btn {
+  width: 10%;
+  height: 50px;
+  line-height: 40px;
+  margin-left: 0 !important;
+}
+
+.keyword-matrix > .btn:nth-child(n) {
+  background-color: orange;
+}
+
+.keyword-matrix > .btn:nth-child(9n+9+1) {
+  clear: left;
+}
+
+.keyword-matrix > .btn:nth-child(n+9+1) {
+  margin-top: -1px;
+}
+
+.keyword-matrix > .btn:first-child {
+  border-bottom-left-radius: 0;
+}
+.keyword-matrix > .btn:nth-child(9) {
+  border-top-right-radius: 4px !important;  
+}
+
+.keyword-matrix > .btn:nth-child(4), 
+.keyword-matrix > .btn:nth-child(5),
+.keyword-matrix > .btn:nth-child(6) {
+  background-color: lightsteelblue;
+}
+
+.keyword-matrix > .btn:nth-child(7), 
+.keyword-matrix > .btn:nth-child(8),
+.keyword-matrix > .btn:nth-child(9) {
+  background-color: mediumpurple;
+}
+
+.keyword-matrix > .btn:nth-last-child(9) {
+  border-bottom-left-radius: 4px !important;  
+}
+.keyword-matrix > .btn:last-child {
+  border-top-right-radius: 0;
+}
+/* end keyword   */
+
+/* Decorations */
+.btn-matrix {
+   max-width: 300px;
+}
+
+.input-matrix {
+   max-width: 500px;
+}
+
+.keyword-matrix {
+   min-width: 500px;
+}
+
+#loading { 
+  display:none; 
+  position:fixed; 
+  z-index: 1000;
+  left:0; 
+  top:0; 
+  width:100%; 
+  height:100%;            
+  background-color: rgba( 58, 36, 22, 0.7 );
+}
+#loading p { 
+  font-size: 36px;
+  color: white;
+  text-align: center;
+}
+#loading img { 
+  max-width: 40%;
+}
+
+.spinner-container {
+}
+.spinner-wrap {
+  display: block;
+  text-align: center;
+}
+.spinner-kbd { 
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+@-webkit-keyframes rotate {
+  100% {-webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+    transform: rotate(360deg);}
+}
+@keyframes rotate {
+  100% {-webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+    transform: rotate(360deg);}
+}
+.spinner-element {
+  color: white;
+  -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+}
+.spinner-element-1 {
+  background: none;
+  margin-top: 10%;
+}
+
+

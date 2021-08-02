@@ -1,0 +1,23 @@
+php_flag  display_errors 1
+php_flag  display_startup_errors 1
+php_flag  html_errors on
+php_flag  log_errors on
+php_value error_reporting -1
+AddDefaultCharset UTF-8
+
+<Files *.ini> 
+Order deny,allow 
+Deny from all 
+</Files>
+
+<Files .gitignore> 
+Order deny,allow 
+Deny from all 
+</Files>
+
+RewriteEngine On
+RewriteBase /crossword/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /crossword/index.php [L]

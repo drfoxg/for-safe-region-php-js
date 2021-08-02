@@ -1,0 +1,44 @@
+.show-block {
+    float: left;
+    padding: 10px 10px;
+    background-color: #dfdfdf;
+}
+
+.rotate-90 {
+    writing-mode: vertical-lr;    
+    transform: rotate(180deg);
+    float: left;
+    padding: 10px 10px;    
+    background-color: #dfdfdf;
+}
+
+.rotate-360:hover {    
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+.rotate-360 {    
+    transition-duration: 1s;
+    transition-property: transform;    
+}
+
+.pre-flip {
+    float: left;
+    padding: 0px 5px 0px 0px;    
+}
+
+.flip-h {
+    float: left;
+    display: inline-block;
+    transform: scale(-1, 1);
+}
+
+.scale2 {
+    transition-duration: 1s;
+    transition-property: transform;  
+}
+
+.scale2:hover {
+    transform: scale(2, 2);
+}
+
+
