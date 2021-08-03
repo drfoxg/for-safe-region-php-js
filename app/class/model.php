@@ -1,6 +1,6 @@
 <?php
 
-namespace Mydevelopersway\Com\Job4;
+namespace MydeveloperswayCom\Encryption;
 
 class Model
 {

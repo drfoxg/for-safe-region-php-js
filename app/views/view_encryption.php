@@ -1,6 +1,6 @@
 <?php
 
-use Mydevelopersway\Com\Job4\Route;
+use MydeveloperswayCom\Encryption\Route;
 ?>
 
 <h1>Задание 4 (Шифровочка)</h1>
@@ -54,7 +54,7 @@ use Mydevelopersway\Com\Job4\Route;
 
 <div class="row"><br></div>
 
-<form class="form-horizontal" id="search-crossword" name="search-crossword"  method="post" action="<?= Route::getRootFolder() . '/job4/search_crossword' ?>" >
+<form class="form-horizontal" id="search-crossword" name="search-crossword"  method="post" action="<?= Route::getRootFolder() . '/encryption/search_crossword' ?>" >
     <div class="col-sm-2 control-label">
         <label for="mask">Маска:</label>
     </div>
@@ -105,4 +105,4 @@ if (!empty($searchresult)) {
 <div class="clearfix"></div>
 <p><a href="<?= Route::getRootFolder() ?>">Главная</a></p>
 
-<script src="<?= Route::getRootFolder() ?>/js/job4.js"></script>
+<script src="<?= Route::getRootFolder() ?>/js/encryption.js"></script>

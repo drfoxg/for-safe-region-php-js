@@ -1,6 +1,6 @@
 <?php
 
-use Mydevelopersway\Com\Job4\Route;
+use MydeveloperswayCom\Encryption\Route;
 
 ?>
 

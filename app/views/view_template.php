@@ -1,6 +1,6 @@
 <?php
 
-use Mydevelopersway\Com\Job4\Route;
+use MydeveloperswayCom\Encryption\Route;
 
 ?>
 
@@ -12,8 +12,7 @@ use Mydevelopersway\Com\Job4\Route;
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha512-Dop/vW3iOtayerlYAqCgkVr2aTr2ErwwTYOvRFUpzl2VhCMJyjQF0Q9TjUXIo6JhuM/3i0vVEt2e/7QQmnHQqw==" crossorigin="anonymous">
     <link rel="stylesheet" href="<?= Route::getRootFolder() ?>/css/style.css">
-    <link rel="stylesheet" href="<?= Route::getRootFolder() ?>/css/job2.css">
-    <link rel="stylesheet" href="<?= Route::getRootFolder() ?>/css/job4.css">
+    <link rel="stylesheet" href="<?= Route::getRootFolder() ?>/css/encryption.css">
 	<title>Тест от Безопасный регион | Главная</title>
 </head>
 <body>

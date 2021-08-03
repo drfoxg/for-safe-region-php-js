@@ -1,4 +1,5 @@
 <?php
+
 /** Каталог приложения. */
 if (!defined('APP_DIR'))
     define('APP_DIR', 'crossword');
@@ -6,6 +7,6 @@ if (!defined('APP_DIR'))
 /** Сторонние библиотеки */
 require_once 'lib/phpQuery-onefile.php';
 
-require_once 'app/bootstrap.php';
+require_once 'app/main.php';
 ?>
 

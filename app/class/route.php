@@ -1,6 +1,6 @@
 <?php
 
-namespace Mydevelopersway\Com\Job4;
+namespace MydeveloperswayCom\Encryption;
 
 class Route
 {
@@ -89,7 +89,7 @@ class Route
         }
 
         // создаем контроллер
-        $controller_name = 'Mydevelopersway\Com\Job4\\'.$controller_name;
+        $controller_name = 'MydeveloperswayCom\Encryption\\'.$controller_name;
         if (class_exists($controller_name)) {
             $controller = new $controller_name;
             $action = $action_name;
@@ -114,7 +114,7 @@ class Route
 
         //header('Location:'.$host.'404');
         $content_view = '404_view.php';
-        include_once 'app/views/template_view.php';
+        include_once 'app/views/view_template.php';
     }
 
 }
