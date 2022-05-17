@@ -113,7 +113,7 @@ class Route
         header("Status: 404 Not Found");
 
         //header('Location:'.$host.'404');
-        $content_view = '404_view.php';
+        $content_view = 'view_404.php';
         include_once 'app/views/view_template.php';
     }
 
